@@ -74,9 +74,10 @@ namespace assignment_3_4_2025_C
 
         static void ResetVotes()
         {
+            //creates a new votes dictionary have the count 0 for all candidates
             Dictionary<string, int> newvotes = new Dictionary<string, int>();
 
-            foreach (KeyValuePair<string, int> vote in newvotes)
+            foreach (KeyValuePair<string, int> vote in votes)
             {
                 newvotes.Add(vote.Key, 0);
             }
